@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Jamar · Descubre la temática ganadora de nuestra Fiesta de Navidad 2026.">
+<title>Jamar | Revelación de temática ganadora · Navidad 2026</title>
+<style>
+:root{--red:#b70820;--red2:#ed2440;--ink:#111118;--silver:#d4d6dd;--gold:#d8b76e;--white:#ffffff;--soft:#f3f4f6;--dark:#0b0b0d;--dark2:#18181b}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#171219;font-family:Arial,Helvetica,sans-serif;color:white;padding:24px}
+.poster{position:relative;isolation:isolate;width:min(100%,900px);min-height:650px;overflow:hidden;border-radius:24px;background:radial-gradient(ellipse at 75% 15%,#4e4d58 0%,transparent 40%),radial-gradient(ellipse at 8% 80%,#4a0b18 0%,transparent 45%),linear-gradient(145deg,#101015 0%,#17151b 64%,#08090d 100%);border:1px solid #736d7a;box-shadow:0 32px 95px #0009;text-align:center;padding:36px 48px 46px;transition:background .45s ease,border-color .45s ease, box-shadow .45s ease}
+.poster:before{content:"";position:absolute;inset:-30%;background:repeating-conic-gradient(from 0deg at 50% 50%,#ffffff09 0deg 2deg,transparent 3deg 35deg);opacity:.3;pointer-events:none;z-index:-1;transition:opacity .4s ease}
+.poster:after{content:"";position:absolute;inset:12px;border:1px solid #ffffff2b;border-radius:17px;pointer-events:none;transition:border-color .45s ease}
+.poster.bw-mode{background:radial-gradient(circle at 20% 15%,#ffffff10 0%,transparent 28%),radial-gradient(circle at 85% 18%,#9d9ea433 0%,transparent 25%),radial-gradient(circle at 50% 90%,#ffffff0c 0%,transparent 20%),linear-gradient(145deg,#060606 0%,#111214 56%,#1a1b1f 100%);border-color:#e5e7eb66;box-shadow:0 32px 95px #000c}
+.poster.bw-mode:before{opacity:.18}
+.poster.bw-mode:after{border-color:#ffffff30}
+.logo{font-weight:900;letter-spacing:-2px;font-size:48px;text-align:left;line-height:1;color:#ffffff}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font-size:12px;font-weight:700;color:#e3cb9e;margin:42px 0 15px}
+.kicker{font-size:clamp(18px,3vw,28px);font-weight:600;margin:0 0 4px}
+.headline{font-weight:900;font-size:clamp(43px,8vw,86px);letter-spacing:-3px;line-height:.99;margin:0;background:linear-gradient(115deg,#fefefe,#d2d4db 48%,#ffffff 70%,#a1a2a8);-webkit-background-clip:text;background-clip:text;color:transparent;text-transform:uppercase}
+.lead{font-size:clamp(15px,2.1vw,19px);line-height:1.6;color:#ede7e9;margin:24px auto;max-width:580px}
+.shimmer{font-size:58px;letter-spacing:18px;color:#f3d8a2;filter:drop-shadow(0 0 12px #f0cc7e77);margin:25px 0}
+.button{margin-top:20px;padding:18px 28px;border-radius:100px;border:1px solid #ff8494;background:linear-gradient(110deg,#ae061d,#ed1834);color:white;font-size:17px;font-weight:800;letter-spacing:.3px;cursor:pointer;box-shadow:0 10px 35px #e51c3f60;transition:transform .18s,box-shadow .18s, background .3s ease, border-color .3s ease, color .3s ease}
+.button:hover,.button:focus-visible{transform:translateY(-3px);box-shadow:0 15px 45px #e51c3f99}
+.footer{font-size:12px;color:#cbc4ce;letter-spacing:1.2px;margin-top:45px}
+.hide{display:none}
+.reveal{animation:up .5s ease both}
+@keyframes up{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+#winnerShell{padding-top:8px}
+.poster.bw-mode #winnerShell .eyebrow{color:#d6d7db}
+.trophy{font-size:45px;margin:8px 0 10px;filter:grayscale(1) brightness(1.2)}
+.winner{font-size:clamp(42px,7vw,70px);font-weight:900;line-height:1;margin:12px 0 6px;color:#fff;letter-spacing:2px}
+.winlabel{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:#d5d7de}
+.result-num{font-size:22px;color:#ffffff;font-weight:700;margin:12px 0 22px}
+.chart{max-width:675px;margin:20px auto 8px;text-align:left;background:linear-gradient(180deg,#ffffff08,#ffffff03);border:1px solid #ffffff14;border-radius:18px;padding:18px 18px 12px;backdrop-filter:blur(4px)}
+.barrow{display:grid;grid-template-columns:180px minmax(0,1fr) 45px;align-items:center;gap:12px;margin:11px 0}
+.category{font-size:13px;font-weight:700;color:#f3f4f6}
+.track{height:24px;background:#ffffff12;border:1px solid #ffffff12;border-radius:20px;overflow:hidden}
+.fill{height:100%;width:0;border-radius:20px;background:linear-gradient(90deg,#8c9098,#ffffff);transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.barrow:first-child .fill{background:linear-gradient(90deg,#ffffff,#b8bbc2)}
+.value{font-size:16px;font-weight:800;text-align:right;color:#ffffff}
+.back{background:transparent;border:1px solid #ffffff55;box-shadow:none;font-size:14px;padding:12px 20px;margin-top:22px;color:#ffffff}
+.back:hover{box-shadow:none;background:#ffffff10}
+.spark{position:absolute;width:6px;height:6px;border-radius:50%;background:#eecf92;box-shadow:0 0 25px 10px #eecf9239;pointer-events:none}
+.s1{top:13%;right:12%}.s2{bottom:22%;left:10%}.s3{top:43%;left:7%}
+.poster.bw-mode .spark{background:#ffffff;box-shadow:0 0 26px 10px #ffffff26}
+.poster.bw-mode .back{border-color:#ffffff66;background:linear-gradient(180deg,#ffffff08,#ffffff02)}
+@media(max-width:600px){body{padding:0}.poster{min-height:100vh;border-radius:0;padding:27px 23px 35px}.logo{font-size:38px}.eyebrow{margin-top:65px}.barrow{grid-template-columns:120px minmax(0,1fr) 30px;gap:6px}.category{font-size:11px}.value{font-size:12px}.chart{margin-top:20px;padding:14px 12px 10px}.button{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="poster" id="poster"><span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+<div class="logo" aria-label="Jamar">Jamar</div>
+<section id="teaser" class="reveal" aria-labelledby="titular">
+<p class="eyebrow">Fiesta de Navidad 2026</p><p class="kicker">¡Ustedes votaron y decidieron!</p>
+<h1 class="headline" id="titular">YA TENEMOS<br>LA GANADORA</h1>
+<div class="shimmer" aria-hidden="true">✦ ✧ ✦</div>
+<p class="lead">Los votos están contados. Una temática conquistó el primer lugar y está lista para brillar en nuestra gran celebración.</p>
+<button class="button" id="show" type="button">✨ Descubre la temática ganadora</button>
+<p class="footer">UNA NAVIDAD PARA BRILLAR JUNTOS</p>
+</section>
+<section id="results" class="hide" aria-label="Resultados de la votación">
+<div id="winnerShell" class="reveal">
+<p class="eyebrow">La temática más votada es…</p>
+<div class="trophy" aria-hidden="true">✦</div>
+<h1 class="winner">BLACK &amp; WHITE</h1>
+<p class="winlabel">Glamour · Elegancia · Brillo</p>
+<p class="result-num">69 votos · 44,8 % del total</p>
+<div class="chart" role="img" aria-label="Resultados finales: Black & White 69 votos, Noche de Óscares 33 votos, Noche de Máscaras 24 votos, Revivamos los 80 13 votos, Feria Circus 11 votos, Jamar Music Fest 4 votos. Total: 154 votos.">
+<div class="barrow"><span class="category">Black &amp; White</span><div class="track"><div class="fill" data-width="100%"></div></div><span class="value">69</span></div>
+<div class="barrow"><span class="category">Noche de Óscares</span><div class="track"><div class="fill" data-width="47.83%"></div></div><span class="value">33</span></div>
+<div class="barrow"><span class="category">Noche de Máscaras</span><div class="track"><div class="fill" data-width="34.78%"></div></div><span class="value">24</span></div>
+<div class="barrow"><span class="category">Revivamos los 80's</span><div class="track"><div class="fill" data-width="18.84%"></div></div><span class="value">13</span></div>
+<div class="barrow"><span class="category">Feria / Circus</span><div class="track"><div class="fill" data-width="15.94%"></div></div><span class="value">11</span></div>
+<div class="barrow"><span class="category">Jamar Music Fest</span><div class="track"><div class="fill" data-width="5.80%"></div></div><span class="value">4</span></div>
+</div>
+<button class="button back" id="back" type="button">← Volver</button>
+</div>
+</section>
+</main>
+<script>
+const teaser=document.getElementById('teaser'),results=document.getElementById('results'),poster=document.getElementById('poster');
+document.getElementById('show').addEventListener('click',()=>{
+  teaser.classList.add('hide');
+  results.classList.remove('hide');
+  results.classList.add('reveal');
+  poster.classList.add('bw-mode');
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    document.querySelectorAll('.fill').forEach(e=>e.style.width=e.dataset.width)
+  }));
+});
+document.getElementById('back').addEventListener('click',()=>{
+  results.classList.add('hide');
+  teaser.classList.remove('hide');
+  document.querySelectorAll('.fill').forEach(e=>e.style.width='0');
+  poster.classList.remove('bw-mode');
+});
+</script>
+</body></html>
